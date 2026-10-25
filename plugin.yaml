@@ -1,0 +1,10 @@
+name: hermes-lang-cs
+version: 1.0.0
+description: >-
+  Czech (Čeština) language pack for Hermes Agent — core (CLI, gateway, approvals, tips), the Ink TUI
+  and the Desktop app. Text-only: no code, no network, no permissions. Just catalogs.
+  Česká lokalizace rozhraní Hermes Agent.
+provides_locales:
+  - id: cs
+    endonym: Čeština
+    rtl: false
