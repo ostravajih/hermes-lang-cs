@@ -25,7 +25,7 @@ Without the pack, a personal overlay also works: drop `locales/cs.yaml` (and opt
 | --- | --- | --- |
 | Core (CLI, gateway, approvals, tips) | `locales/cs.yaml` | 3509 |
 | Ink TUI | `locales/cs.tui.yaml` | 1385 |
-| Hermes Desktop | `locales/cs.desktop.yaml` | 5324 |
+| Hermes Desktop | `locales/cs.desktop.yaml` | 5328 |
 
 Key sets are kept equal to the English catalogs of Hermes Agent `d050956` (2026-10-25), verified by
 flattening both sides and diffing the key sets, including function-backed entries.
@@ -35,7 +35,7 @@ flattening both sides and diffing the key sets, including function-backed entrie
 Entries whose English value is a *function with branching* (plural counts such as `cron.count`,
 `sidebar.messageCount`, or labels that swap on a condition such as
 `assistant.thread.errorSwitchToModel`) cannot be expressed as a single template in the pack format.
-Those 125 Desktop keys are left out on purpose and render in English rather than in a wrong Czech
+Those 121 Desktop keys (plus two array values) are left out on purpose and render in English rather than in a wrong Czech
 form ("1 zpráv"). The core and TUI catalogs have no such gaps: positional `{0}` templates cover
 every function-backed entry there.
 
