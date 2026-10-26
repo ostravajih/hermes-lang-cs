@@ -25,9 +25,9 @@ Without the pack, a personal overlay also works: drop `locales/cs.yaml` (and opt
 | --- | --- | --- |
 | Core (CLI, gateway, approvals, tips) | `locales/cs.yaml` | 3509 |
 | Ink TUI | `locales/cs.tui.yaml` | 1385 |
-| Hermes Desktop | `locales/cs.desktop.yaml` | 5328 |
+| Hermes Desktop | `locales/cs.desktop.yaml` | 5333 |
 
-Key sets are kept equal to the English catalogs of Hermes Agent `d050956` (2026-10-25), verified by
+Key sets are kept equal to the English catalogs of Hermes Agent `e82bf01` (2026-10-26), verified by
 flattening both sides and diffing the key sets, including function-backed entries.
 
 ### Known fallbacks
@@ -48,7 +48,7 @@ as a HIGH-severity finding, and the visible result is identical without it.
 Hand-reviewed Czech catalogs maintained at
 [ostravajih/hermes-agent `feat/i18n-czech`](https://github.com/ostravajih/hermes-agent/tree/feat/i18n-czech)
 (upstream PR [NousResearch/hermes-agent#105503](https://github.com/NousResearch/hermes-agent/pull/105503)),
-synced against `upstream/main` on 2026-10-25. This pack ships the same text so Czech users are not
+synced against `upstream/main` on 2026-10-26. This pack ships the same text so Czech users are not
 blocked while that PR waits for review; if the PR lands, the bundled locale and this pack agree.
 
 ## License
