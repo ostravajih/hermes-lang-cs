@@ -1006,6 +1006,8 @@ platform:
       confirm_title: 'Potvrdit'
       already_resolved: 'Toto schválení již bylo vyřešeno~'
       expired: '⌛ Platnost schválení vypršela — příkaz nebyl spuštěn (časový limit již vypršel nebo bylo vyřešeno jinde)'
+      no_longer_pending: '⌛ Toto schválení už nečeká na vyřízení (vypršel mu časový limit nebo bylo vyřízeno jinde)'
+      click_failed: '⚠️ Vaši volbu se nepodařilo zaznamenat. Klikněte znovu, nebo odpovězte pomocí /approve či /deny.'
       by_user: '{label} — uživatel: {user}'
       resolved_once: 'Schváleno jednou'
       resolved_session: 'Schváleno pro relaci'
@@ -2017,7 +2019,6 @@ cli:
     cleared_picker_cache: 'Mezipaměť výběru modelů vymazána. Obnovuji...'
     moa_one_shot_queued: 'MoA jednorázově zařazeno do fronty s předvolbou {preset}; předchozí model bude obnoven po tomto tahu.'
     normalized_model: "Normalizoval jsem model '{old}' na '{new}' pro {provider}."
-    normalized_copilot_model: "Normalizoval jsem model Copilot '{old}' na '{new}'."
     stripped_provider_prefix: "Odebral jsem předponu poskytovatele z '{old}'; používám '{new}' pro {provider}."
     restored_from_session: 'Model obnoven z relace: {model}'
     could_not_load_config: '❌ nepodařilo se načíst konfiguraci: {error}'
