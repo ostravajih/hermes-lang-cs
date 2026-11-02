@@ -23,11 +23,11 @@ Without the pack, a personal overlay also works: drop `locales/cs.yaml` (and opt
 
 | Surface | File | Keys |
 | --- | --- | --- |
-| Core (CLI, gateway, approvals, tips) | `locales/cs.yaml` | 3510 |
-| Ink TUI | `locales/cs.tui.yaml` | 1386 |
-| Hermes Desktop | `locales/cs.desktop.yaml` | 5360 |
+| Core (CLI, gateway, approvals, tips) | `locales/cs.yaml` | 3515 |
+| Ink TUI | `locales/cs.tui.yaml` | 1390 |
+| Hermes Desktop | `locales/cs.desktop.yaml` | 5404 |
 
-Key sets are kept equal to the English catalogs of Hermes Agent `ef75bc70` (2026-10-29), verified by
+Key sets are kept equal to the English catalogs of Hermes Agent `40b566502a` (2026-11-02), verified by
 flattening both sides and diffing the key sets, including function-backed entries.
 
 ### Known fallbacks
@@ -35,13 +35,13 @@ flattening both sides and diffing the key sets, including function-backed entrie
 Entries whose English value is a *function with branching* (plural counts such as `cron.count`,
 `sidebar.messageCount`, or labels that swap on a condition such as
 `assistant.thread.errorSwitchToModel`) cannot be expressed as a single template in the pack format.
-Those 125 Desktop keys (plus two array values) are left out on purpose and render in English rather than in a wrong Czech
+Those 117 Desktop keys (plus two array values) are left out on purpose and render in English rather than in a wrong Czech
 form ("1 zpráv"). The core and TUI catalogs have no such gaps: positional `{0}` templates cover
 every function-backed entry there.
 
 `settings.sessions.defaultDirUpdated` is a special case: its English value takes an optional keyboard
-shortcut and wraps it in brackets only when present, which a pack template cannot do, so the Czech
-text names the action without the shortcut.
+shortcut and wraps it in brackets only when present, which a pack template cannot do, so it is left out
+and renders in English.
 
 Two strings in `locales/cs.yaml` (`display.verb_connector.search` / `.default`) drop an invisible
 zero-width space that the upstream English catalog keeps for spacing; the install scanner flags it
